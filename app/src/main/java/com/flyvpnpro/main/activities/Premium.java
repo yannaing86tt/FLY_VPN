@@ -143,7 +143,7 @@ public class Premium extends BaseActivity {
                 @Override
                 public void onClick(View _view) {
                     i.setAction(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("https://t.me/flyvpnprovip"));
+                    i.setData(Uri.parse("https://t.me/noobqueenn"));
                     startActivity(i);
                 }
             });

@@ -1321,19 +1321,19 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
                 return true;
 
               case R.id.telegram_ch:
-                String url2 = "https://t.me/flyvpnpro";
+                String url2 = "https://t.me/tazeteam9";
                 Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
                 startActivity(Intent.createChooser(intent2, getText(R.string.open_with)));
                 break;
 
               case R.id.telegram_gp:
-                String url3 = "https://t.me/flyvpngroupchat";
+                String url3 = "https://t.me/tazechat9";
                 Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(url3));
                 startActivity(Intent.createChooser(intent3, getText(R.string.open_with)));
                 break;
                         
               case R.id.facebook_page:
-                String url5 = "https://www.facebook.com/flyvpnpro?mibextid=ZbWKwL";
+                String url5 = "https://facebook.com/TazeTeam";
                 Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse(url5));
                 startActivity(Intent.createChooser(intent5, getText(R.string.open_with)));
                 break;                 
@@ -2311,7 +2311,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
 				break;
             
 			case R.id.activity_mainAutorText:
-				String url = "http://t.me/SlipkProjects";
+				String url = "https://t.me/noobqueenn";
 				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity(Intent.createChooser(intent, getText(R.string.open_with)));

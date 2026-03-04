@@ -101,7 +101,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener {
                                      Uri.parse("https://play.google.com/store/apps/details?id=com.flyvpnpro.official")));
         } else if (id == R.id.developer) {
             startActivity(new Intent("android.intent.action.VIEW", 
-                                     Uri.parse("https://t.me/devkali7")));
+                                     Uri.parse("https://t.me/YanNaingLyn")));
         }
     }
 
