@@ -6,9 +6,9 @@
     <color name="yellow">#eefd00</color>
     <color name="blue">#808080</color>
     
-    <color name="colorPrimary">#ff021b3a</color>
-    <color name="colorPrimaryDark">#ff021b3a</color>
-    <color name="colorAccent">#ff3c4975</color>  
+    <color name="colorPrimary">#0B7A34</color>
+    <color name="colorPrimaryDark">#075726</color>
+    <color name="colorAccent">#16C15A</color>  
    
     <color name="gray_light">#dedede</color>
     <color name="blue_light">#dedede</color>
@@ -17,7 +17,7 @@
     <color name="green">#04d000</color>
     <color name="ja">#333333</color>
     
-    <color name="toolbar_bg">#333333</color>
+    <color name="toolbar_bg">#0B7A34</color>
     <color name="al">#ffffffff</color>
     <color name="bg">#ff101d24</color>
     

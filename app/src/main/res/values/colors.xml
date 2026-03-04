@@ -20,7 +20,7 @@
     <color name="tab_text">#FF2E7279</color>
     
     <color name="nav_textcolor">#454c58</color>
-    <color name="toolbar_bg">#3E4EB0</color>
+    <color name="toolbar_bg">#0E8F3A</color>
     <color name="jacolor">#FF000000</color>
     
     <color name="ja">#EAEAEA</color>
@@ -31,12 +31,12 @@
     <color name="logsbg">#25b0f3</color>
     <color name="logs_textcolor">#454c58</color>
     
-    <color name="colorPrimary">#25b0f3</color>
-    <color name="colorPrimaryDark">#25b0f3</color>
-    <color name="splash_bg">#25b0f3</color>
+    <color name="colorPrimary">#12A84A</color>
+    <color name="colorPrimaryDark">#0B7A34</color>
+    <color name="splash_bg">#12A84A</color>
    
     <color name="colorSecondary">@color/blue</color>
-    <color name="colorAccent">#1f265c</color>
+    <color name="colorAccent">#16C15A</color>
     <color name="JohnAlvinJa">#808080</color>
     
     <color name="bg">#FFFFFFFF</color>
