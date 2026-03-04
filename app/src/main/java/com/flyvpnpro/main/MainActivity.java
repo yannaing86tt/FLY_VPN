@@ -1845,7 +1845,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
                 public void onUpdateListener(String result) {
                     try {
                         if (!result.contains("Error on getting data")) {
-                            String json_data = AESCrypt.decrypt(configs.PASSWORD, result);
+                            String json_data = decodeOrPlain(result);
                             if (isNewVersion(json_data)) {
                                 newUpdateDialog(result);
                             } else {
@@ -1863,9 +1863,16 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
             }).start(isOnCreate);
     }
 
+    private String decodeOrPlain(String raw) {
+        try {
+            return AESCrypt.decrypt(configs.PASSWORD, raw);
+        } catch (Exception ignored) {
+            return raw;
+        }
+    }
+
     private boolean isNewVersion(String result) {
         try {
-
             String current = configs.getVersion();
             String update = new JSONObject(result).getString("FLYVersion");
             return configs.versionCompare(update, current);
@@ -1927,7 +1934,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
     private void newUpdateDialog(final String result) throws JSONException, GeneralSecurityException{
         updateNotif();
         notif2();
-        String json_data = AESCrypt.decrypt(configs.PASSWORD, result);
+        String json_data = decodeOrPlain(result);
         String notes = new JSONObject(json_data).getString("FLYReleaseNotes");
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View inflate = inflater.inflate(R.layout.update_help, (ViewGroup) null);

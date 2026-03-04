@@ -217,12 +217,23 @@ public class ConfigUtil {
       File file = new File(context.getFilesDir(), "flyvpnpro.json");
       if (file.exists()) {
         String json_file = readStream(new FileInputStream(file));
-        String json = AESCrypt.decrypt(PASSWORD, json_file);
-        return new JSONObject(json);
+        try {
+          String json = AESCrypt.decrypt(PASSWORD, json_file);
+          return new JSONObject(json);
+        } catch (Exception ignored) {
+          // plain JSON fallback
+          return new JSONObject(json_file);
+        }
       } else {
         InputStream inputStream = context.getAssets().open("flyvpnpro/flyvpnpro.json");
-        String json = AESCrypt.decrypt(PASSWORD, readStream(inputStream));
-        return new JSONObject(json);
+        String raw = readStream(inputStream);
+        try {
+          String json = AESCrypt.decrypt(PASSWORD, raw);
+          return new JSONObject(json);
+        } catch (Exception ignored) {
+          // plain JSON fallback
+          return new JSONObject(raw);
+        }
       }
     } catch (Exception e) {
       e.printStackTrace();
