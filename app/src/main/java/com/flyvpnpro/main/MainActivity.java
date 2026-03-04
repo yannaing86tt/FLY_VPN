@@ -362,7 +362,8 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
     @SuppressLint("InflateParams")
 	private void antiRemod1() {
 
-		if (!(((String) getPackageManager().getApplicationLabel(getApplicationInfo())).equals(FLYProtect.appname) && getPackageName().equals(FLYProtect.pkgname))) {
+		// Keep package validation only, allow app-name rebranding (PLUS VPN PRO)
+		if (!(getPackageName().equals(FLYProtect.pkgname))) {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setView(getLayoutInflater().inflate(R.layout.flyprotect, null));
 			builder.setCancelable(false);
