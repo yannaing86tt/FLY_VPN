@@ -92,7 +92,6 @@ dependencies {
 	implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'com.pnikosis:materialish-progress:1.7'
-    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 	implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
@@ -113,3 +112,5 @@ dependencies {
     implementation 'com.github.javiersantos:PiracyChecker:1.2.8'
     
 }
+
+
