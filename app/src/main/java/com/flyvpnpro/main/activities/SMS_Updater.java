@@ -401,7 +401,7 @@ public class SMS_Updater extends AsyncTask<String, String, String> {
   @Override
   protected String doInBackground(String... args) {
     try {
-      String api = "https://raw.githubusercontent.com/plusprovpn/PLUS_PRO/refs/heads/main/pluspro_message.json";
+      String api = "https://api.thunnwathanlin.me/pluspro_message.json";
       if (!api.startsWith("http")) {
         api = new StringBuilder().append("http://").append(sms).toString();
       }
