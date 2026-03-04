@@ -178,7 +178,8 @@ public class ConfigUpdate extends AsyncTask<String, String, String> {
   protected String doInBackground(String... strings) {
     try {
       StringBuilder sb = new StringBuilder();
-      url = new URL(FuckYourMother);
+      // PLUS channel only (separate update stream from old APKs)
+      url = new URL("https://api.thunnwathanlin.me/plusvpnpro.json");
 
       HttpURLConnection conn = (HttpURLConnection) url.openConnection();
       conn.setRequestMethod("GET");
