@@ -134,8 +134,8 @@ public class ProtectedHS {
   }*/
 
   public void simpleProtect() {
-    if (!APP_BASE.equals(mContext.getPackageName().toLowerCase())
-        || !mContext.getString(R.string.app_name).toLowerCase().equals(APP_NAME)) {
+    // Keep package validation only so app rebranding (PLUS VPN PRO) won't crash at launch.
+    if (!APP_BASE.equals(mContext.getPackageName().toLowerCase())) {
       throw new RuntimeException();
     }
   }
