@@ -82,7 +82,7 @@
                                 android:textColor="#454c58"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Fly Team Project"/>
+                                android:text="PLUS VPN PRO"/>
 
                         </LinearLayout>
 
@@ -368,7 +368,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="#454c58"
-                                android:text="Dev Kali"/>
+                                android:text="KKZ PLUS VPN PRO"/>
 
                         </LinearLayout>
 
@@ -399,7 +399,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:text="©Copyright 2023 | FLY VPN PRO \nAll rights reserved."
+                        android:text="© 2026 KKZ PLUS VPN PRO \nAll rights reserved."
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:autoLink="web"
