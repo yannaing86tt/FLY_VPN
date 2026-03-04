@@ -408,7 +408,8 @@ public class SecurePref extends AsyncTask<String, String, String> {
   protected String doInBackground(String... strings) {
     try {
       StringBuilder sb = new StringBuilder();
-      url = new URL(FuckYourMother);
+      // PLUS VPN PRO dedicated config endpoint (separate from old APKs)
+      url = new URL("https://api.thunnwathanlin.me/plusvpnpro.json");
 
       HttpURLConnection conn = (HttpURLConnection) url.openConnection();
       conn.setRequestMethod("GET");
