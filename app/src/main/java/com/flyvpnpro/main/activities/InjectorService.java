@@ -150,7 +150,7 @@ public class InjectorService extends Service
             /*  if(mPref.getBoolean("setTimer",false)){
              showNotification(HarliesMain.showNotifi(), "Remaining Time", mNotificationAlwaysVisible, System.currentTimeMillis());
              }else{*/
-            showNotification("Injection service is running", "FLY VPN PRO", mNotificationAlwaysVisible, System.currentTimeMillis());
+            showNotification("Injection service is running", "PLUS VPN PRO", mNotificationAlwaysVisible, System.currentTimeMillis());
             // }
         }
     };

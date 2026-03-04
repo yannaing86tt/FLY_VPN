@@ -23,8 +23,9 @@
 			android:textColor="#FFFFFF"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="FLY VPN PRO" />
+			android:text="PLUS VPN PRO" />
 
 	</LinearLayout>
 
 </LinearLayout>
+

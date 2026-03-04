@@ -51,7 +51,7 @@ public class CrashWindow implements UncaughtExceptionHandler {
         stringBuilder.append("Incremental: ");
         stringBuilder.append(VERSION.INCREMENTAL);
         stringBuilder.append("\n");
-        stringBuilder.append("Please Contact FLY VPN PRO(DevKali)");
+        stringBuilder.append("Please Contact PLUS VPN PRO(KKZ PLUS VPN PRO)");
         stringBuilder.append("\n");
         try {
             Intent intent = new Intent(this.myContext, Errors.class);
@@ -65,3 +65,4 @@ public class CrashWindow implements UncaughtExceptionHandler {
         }
     }
 }
+

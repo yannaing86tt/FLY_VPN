@@ -84,15 +84,15 @@ ServerHostKeyVerifier, DebugLogger
         SharedPreferences prefs = mConfig.getPrefsPrivate();
         int tunnelType = prefs.getInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_DIRECT);
         if(tunnelType==Settings.bTUNNEL_TYPE_SSH_PROXY){
-            SkStatus.logInfo("<strong>"+"Secure Shell (SSH PROXY) | FLY VPN PRO"+"</strong>");
+            SkStatus.logInfo("<strong>"+"Secure Shell (SSH PROXY) | PLUS VPN PRO"+"</strong>");
         }else if(tunnelType==Settings.bTUNNEL_TYPE_SSH_SSL){
-            SkStatus.logInfo("<strong>"+"Secure Shell (SSL) | FLY VPN PRO"+"</strong>");
+            SkStatus.logInfo("<strong>"+"Secure Shell (SSL) | PLUS VPN PRO"+"</strong>");
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_PAY_SSL){
-            SkStatus.logInfo("<strong>"+"Secure Shell (SSL + PAY) | FLY VPN PRO"+"</strong>");
+            SkStatus.logInfo("<strong>"+"Secure Shell (SSL + PAY) | PLUS VPN PRO"+"</strong>");
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_SSL_RP){
-            SkStatus.logInfo("<strong>"+"Secure Shell (SSL + RP) | FLY VPN PRO"+"</strong>");
+            SkStatus.logInfo("<strong>"+"Secure Shell (SSL + RP) | PLUS VPN PRO"+"</strong>");
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_SLOWDNS){
-            SkStatus.logInfo("<strong>"+"Secure Shell (SlowDNS) | FLY VPN PRO"+"</strong>");
+            SkStatus.logInfo("<strong>"+"Secure Shell (SlowDNS) | PLUS VPN PRO"+"</strong>");
         }else{
             SkStatus.logInfo("<strong>"+"Direct Connection"+"</strong>");
         }
@@ -1075,3 +1075,4 @@ ServerHostKeyVerifier, DebugLogger
                 }
             };
 }
+

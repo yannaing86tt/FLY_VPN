@@ -163,7 +163,7 @@ implements SkStatus.StateListener
             mTunnelThread = new Thread(mTunnelManager);
             mTunnelThread.start();
 
-            SkStatus.logInfo("FLY VPN PRO Started");
+            SkStatus.logInfo("PLUS VPN PRO Started");
 
         } catch(Exception e) {
             SkStatus.logException(e);
@@ -191,7 +191,7 @@ implements SkStatus.StateListener
 
 				mTunnelThread.interrupt();
 
-				SkStatus.logInfo("FLY VPN PRO Stopping\nThank you for using this app!");
+				SkStatus.logInfo("PLUS VPN PRO Stopping\nThank you for using this app!");
 			}
 
 			mTunnelManager = null;
@@ -299,17 +299,17 @@ implements SkStatus.StateListener
 		int icon = getIconByConnectionStatus(status);
         int tunnelType = prefs.getInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_DIRECT);
 		if(tunnelType==Settings.bTUNNEL_TYPE_SSH_PROXY){
-			type = "FLY VPN PRO (PROXY)";
+			type = "PLUS VPN PRO (PROXY)";
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_SSH_SSL){
-			type = "FLY VPN PRO (SSL)";
+			type = "PLUS VPN PRO (SSL)";
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_PAY_SSL){
-			type = "FLY VPN PRO (SSL+PAY)";
+			type = "PLUS VPN PRO (SSL+PAY)";
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_SSL_RP){
-			type = "FLY VPN PRO (SSL+RP)";
+			type = "PLUS VPN PRO (SSL+RP)";
 		}else if(tunnelType==Settings.bTUNNEL_TYPE_SLOWDNS){
-			type = "FLY VPN PRO (SlowDNS)";
+			type = "PLUS VPN PRO (SlowDNS)";
 		}else{
-			type = "FLY VPN PRO (Direct)";
+			type = "PLUS VPN PRO (Direct)";
 		}
 		if (mNotifyBuilder == null) {
 			//mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -609,3 +609,4 @@ implements SkStatus.StateListener
         lastStateMsg = netstatestring;
     }
 }
+

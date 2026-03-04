@@ -136,8 +136,8 @@
 	<string name="disabled">Light Theme</string>
 	
 	<!--Welcome Wizard strings (DJH)-->
-	<string name="wizard_details">Some details of FLY VPN PRO</string>
-	<string name="wizard_details_msg">FLY VPN PRO is a VPN client that works through an SSH server. The application itself is useless without a configuration, so it is only for use by advanced users.</string>
+	<string name="wizard_details">Some details of PLUS VPN PRO</string>
+	<string name="wizard_details_msg">PLUS VPN PRO is a VPN client that works through an SSH server. The application itself is useless without a configuration, so it is only for use by advanced users.</string>
 	<string name="payload_details">Keywords</string>
 	<string name="payload_details_msg">The following keywords are currently supported in the connection text: [method] [host_port] [ssh] [host] [port] [protocol] [crlf] [cr] [lf] [lfcr] [ua] [random=*;] [rotate=*;] [split] [delay_split]</string>
 	<string name="project_home">Developer Home:</string>
@@ -259,3 +259,4 @@
 	<string name="error_save_settings">Couldnt Save Configuration</string>
     
 </resources>
+

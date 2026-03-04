@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10.0dip" 
-            android:text="Powered by Dev Kali" />
+            android:text="Powered by KKZ PLUS VPN PRO" />
         
           </LinearLayout>
     
@@ -71,3 +71,4 @@
     </androidx.drawerlayout.widget.DrawerLayout>
 
 </LinearLayout>
+

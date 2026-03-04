@@ -146,7 +146,7 @@ implements ProxyData
             //SkStatus.logInfo("set auto replace response");
             if (str2.split(" ")[0].equals("HTTP/1.1"))
             {
-                SkStatus.logInfo("<strong><b><font color=#FFDA0A> FLY VPN PRO | Auto Replace 200ok</strong>");
+                SkStatus.logInfo("<strong><b><font color=#FFDA0A> PLUS VPN PRO | Auto Replace 200ok</strong>");
 
                 //SkStatus.logInfo("<b>Status: 200 (Connection established) Successfull</b> - The action requested by the client was successful.");
             }
@@ -234,3 +234,4 @@ implements ProxyData
     }
 
 }
+

@@ -410,7 +410,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Our Team services have a guarantee and 24/7 support, consult terms and conditions for more information.FLY VPN PRO ©"
+                            android:text="Our Team services have a guarantee and 24/7 support, consult terms and conditions for more information.PLUS VPN PRO ©"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:gravity="center"
                             android:textColor="#FFFFFF"
@@ -430,3 +430,4 @@
     </LinearLayout>
 
 </LinearLayout>
+

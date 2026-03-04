@@ -402,7 +402,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
             .setTicker("{your tiny message}")
             .setContentTitle("App Update Available")
             .setContentText("Update Your App Now")
-            .setContentInfo("FLY VPN PRO");
+            .setContentInfo("PLUS VPN PRO");
 
         NotificationManager nm = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
         nm.notify(1, b.build());
@@ -2791,7 +2791,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
     iv.setImageResource(R.drawable.ic_dev);
     title.setText("Help");
     ms.setText(
-        "If you are connected to FLY VPN PRO but no internet data connection please go to menu,settings and enable DNS Forwarder then try to connect\n\nIf enabling DNS Forwarder still no internet data connection try again to Disable DNS Forwarder and start to connect");
+        "If you are connected to PLUS VPN PRO but no internet data connection please go to menu,settings and enable DNS Forwarder then try to connect\n\nIf enabling DNS Forwarder still no internet data connection try again to Disable DNS Forwarder and start to connect");
     bubu.setText("Got It");
     final AlertDialog alert = builer.create();
     alert.setCanceledOnTouchOutside(false);
@@ -2819,7 +2819,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
     sweetDialog = new SweetAlertDialog(MainActivity.this, SweetAlertDialog.WARNING_TYPE);
     sweetDialog.setTitleText("Warning !!");
     sweetDialog.setContentText(
-        "Are you sure to clear FLY VPN PRO application data including config updates? \n Click OK to Proceed");
+        "Are you sure to clear PLUS VPN PRO application data including config updates? \n Click OK to Proceed");
     sweetDialog.setCancelText("CANCEL");
     sweetDialog.setConfirmText("OK");
     sweetDialog.showCancelButton(true);
