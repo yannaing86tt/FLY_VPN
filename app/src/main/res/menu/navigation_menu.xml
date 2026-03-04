@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+          
+   <group android:id="@+id/grupo0">  
+        
+       <item
+           android:id="@+id/changelogs"
+           android:icon="@drawable/ic_bell_ring"
+           android:title="Information"/>
+       
+       <item
+           android:id="@+id/configUpdate"
+           android:icon="@drawable/ic_download_circle"
+           android:title="Server Update"/>
+        
+       <item 
+           android:id="@+id/miSettings"
+           android:icon="@drawable/ic_settings_transfer"
+           android:title="Settings"/>    
+       
+        
+       <group android:id="@+id/group0">
+        
+       <item
+           android:id="@+id/buy_premium"
+           android:icon="@drawable/ic_diamond_stone"
+           android:title="Subscriptions"/>     
+            
+       <item
+           android:id="@+id/vip_login"
+           android:icon="@drawable/vip_menu"
+           android:title="VIP Login"/> 
+            
+       </group>
+       
+       <item
+           android:id="@+id/speedtest"
+           android:icon="@drawable/ic_speedtest"
+           android:title="Speed Test"/>  
+    
+       <item
+           android:id="@+id/geolocation"
+           android:icon="@drawable/pin"
+           android:title="Geo Location"/>
+        
+       <group android:id="@+id/group1">
+
+       <item           
+           android:id="@+id/telegram_ch"          
+           android:icon="@drawable/ic_telegram"         
+           android:title="Telegram Channel"/>
+
+       <item 
+           android:id="@+id/telegram_gp"
+           android:icon="@drawable/ic_telegram"
+           android:title="Telegram Group"/>  
+        
+       <item 
+           android:id="@+id/facebook_page"
+           android:icon="@drawable/fb"
+           android:title="Facebook Page"/>   
+        
+       </group> 
+        
+       <item 
+           android:id="@+id/miAbout"
+           android:icon="@drawable/about"
+           android:title="About"/>
+    
+    </group>
+    
+</menu>

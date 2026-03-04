@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="170dp"
+			android:gravity="center"
+			android:background="?colorPrimary">
+
+			<ImageView
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/icons"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="E R R O R ! !"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:typeface="monospace"
+				android:textSize="35sp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="YOU ARE NO HACK THIS APPLICATION!"
+			android:layout_margin="5dp"
+			android:layout_marginTop="16dp"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textColor="#FF0F00"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="PLEASE INSTALL THE ORIGINAL APP"
+			android:layout_margin="5dp"
+			android:layout_marginTop="15dp"
+			android:textStyle="bold"
+			android:textSize="16sp"/>
+
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rippelColor">#ff63a742</color>
+    
+    <color name="gray_light">#DEDEDE</color>
+    <color name="blue">#25b0f3</color>
+    <color name="blue_light">#2BACBD</color>
+    <color name="gray">#25b0f3</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FD1C0D</color>
+    <color name="yellow">#EEFD00</color>
+    <color name="green">#04D000</color>
+    <color name="orange">#FF8700</color>
+    <color name="blue_vip">#FF8000</color>
+    <color name="green_vip">#0FCD2A</color>
+    
+    <color name="tab_bg">#FFFFFF</color>
+    <color name="tab_text">#FF2E7279</color>
+    
+    <color name="nav_textcolor">#454c58</color>
+    <color name="toolbar_bg">#3E4EB0</color>
+    <color name="jacolor">#FF000000</color>
+    
+    <color name="ja">#EAEAEA</color>
+    
+    <color name="button_normal">#FF11243B</color>
+    <color name="button_pressed">#FFFFFFFF</color>
+    
+    <color name="logsbg">#25b0f3</color>
+    <color name="logs_textcolor">#454c58</color>
+    
+    <color name="colorPrimary">#25b0f3</color>
+    <color name="colorPrimaryDark">#25b0f3</color>
+    <color name="splash_bg">#25b0f3</color>
+   
+    <color name="colorSecondary">@color/blue</color>
+    <color name="colorAccent">#1f265c</color>
+    <color name="JohnAlvinJa">#808080</color>
+    
+    <color name="bg">#FFFFFFFF</color>
+    <color name="JohnAlvin">#ff303038</color>
+    
+    <color name="textColorPrimary">#FF000000</color>
+    <color name="textColorSecondary">#FF000000</color>
+    <color name="colorTextEnabled">#333333</color>
+    <color name="colorTextDisabled">#FFFFFF</color>
+    <color name="colorOpposite">#FFFFFF</color>
+    
+    <color name="color_disconnected">#FD1C0D</color>
+    <color name="color_connected">#FFDA0A</color>
+
+    <color name="aboutTitleText">#FFDA0A</color>
+    <color name="aboutInfoText">#FFFFFF</color>
+    <color name="spinnertext">#FFFFFF</color>
+    <color name="nav_leaf">#FFDA0A</color>
+    <color name="public_use">#FFDA0A</color>
+    
+    <color name="al">#ff021b3a</color>
+    <color name="colorText">@color/text_color</color>
+    <color name="colorPrimaryBackground">#FFFFFF</color>
+    <color name="colorSecondaryBackground">#ffffff</color>
+
+    <color name="romz_color">#000000</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="color_text">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    
+</resources>
+

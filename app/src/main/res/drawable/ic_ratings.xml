@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="285"
+    android:viewportHeight="43"
+    android:width="285dp"
+    android:height="43dp">
+    <path
+        android:pathData="M21 0Q24.8 -1.5 24 1.5L30.5 14L45 15L45 17.5L38.5 24L34 27.5L37 43L34.5 43L21.5 36Q16.2 41.5 8 43L11 27.5L0 17.5L0 15L6.5 15Q8.3 12.3 14.5 14L16 12.5L21 0Z"
+        android:fillColor="#E8BF45"
+        android:fillAlpha="0.9294118"
+        android:strokeColor="#E8BF45"
+        android:strokeAlpha="0.9294118"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M81.5 0L85 1.5Q86.3 9.3 90.5 14L105 15L105 17.5L98.5 24L94 27.5L97 43L94.5 43L81.5 36Q76.2 41.5 68 43L71 27.5L60 17.5L60 15L66.5 15Q68.2 12.3 74.5 14L76 12.5L81.5 0Z"
+        android:fillColor="#E8BF45"
+        android:fillAlpha="0.9294118"
+        android:strokeColor="#E8BF45"
+        android:strokeAlpha="0.9294118"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M141.5 0L145 1.5Q146.3 9.3 150.5 14L165 15L165 17.5L158.5 24L154 27.5L157 43L154.5 43L141.5 36Q136.2 41.5 128 43L131 27.5L120 17.5L120 15L126.5 15Q128.3 12.3 134.5 14L136 12.5L141.5 0Z"
+        android:fillColor="#E8BF45"
+        android:fillAlpha="0.9294118"
+        android:strokeColor="#E8BF45"
+        android:strokeAlpha="0.9294118"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M201.5 0L205 1.5Q206.3 9.3 210.5 14L225 15L225 17.5L218.5 24L214 27.5L217 43L214.5 43L201.5 36Q196.2 41.5 188 43L191 27.5L180 17.5L180 15L186.5 15Q188.3 12.3 194.5 14L196 12.5L201.5 0Z"
+        android:fillColor="#E8BF45"
+        android:fillAlpha="0.9294118"
+        android:strokeColor="#E8BF45"
+        android:strokeAlpha="0.9294118"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M261.5 0L265 1.5Q266.3 9.3 270.5 14L285 15L285 17.5L278.5 24L274 27.5L277 43L274.5 43L261.5 36Q256.2 41.5 248 43L251 27.5L240 17.5L240 15L246.5 15Q248.3 12.3 254.5 14L256 12.5L261.5 0Z"
+        android:fillColor="#E8BF45"
+        android:fillAlpha="0.9294118"
+        android:strokeColor="#E8BF45"
+        android:strokeAlpha="0.9294118"
+        android:strokeWidth="1" />
+</vector>

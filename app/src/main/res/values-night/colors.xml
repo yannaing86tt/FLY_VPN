@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorOpposite">#ffffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#fd1c0d</color>
+    <color name="yellow">#eefd00</color>
+    <color name="blue">#808080</color>
+    
+    <color name="colorPrimary">#ff021b3a</color>
+    <color name="colorPrimaryDark">#ff021b3a</color>
+    <color name="colorAccent">#ff3c4975</color>  
+   
+    <color name="gray_light">#dedede</color>
+    <color name="blue_light">#dedede</color>
+    <color name="gray">#808080</color>
+    <color name="black_light">#333333</color>
+    <color name="green">#04d000</color>
+    <color name="ja">#333333</color>
+    
+    <color name="toolbar_bg">#333333</color>
+    <color name="al">#ffffffff</color>
+    <color name="bg">#ff101d24</color>
+    
+    <color name="colorSecondary">@color/blue</color>
+    <color name="textColorPrimary">#b6a7a6</color>
+    <color name="textColorSecondary">#bfbcbb</color>
+    <color name="colorTextEnabled">#ffffff</color>
+    <color name="colorTextDisabled">#5b5b5b</color>
+    
+   <color name="JohnAlvin">#ffffff</color>
+   <color name="JohnAlvinJa">#FF303030</color>
+    
+   <color name="colorText">@color/text_color</color>
+    <color name="colorPrimaryBackground">#000000</color>
+    <color name="colorSecondaryBackground">#333333</color>
+    
+</resources>
+

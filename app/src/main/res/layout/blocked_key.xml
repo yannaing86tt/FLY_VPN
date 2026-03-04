@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:gravity="center" android:id="@+id/key" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter key"/>
+    <Button android:textColor="#ffffffff" android:id="@+id/unlock" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="5dp" android:text="Unlock"/>
+</LinearLayout>

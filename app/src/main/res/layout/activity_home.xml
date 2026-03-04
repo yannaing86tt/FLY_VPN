@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/testbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:background="@drawable/bg_share"
+                    android:padding="8.0dip"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menu"
+                    android:onClick="offlinez"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12.0dip" />
+
+                <ImageView
+                    android:padding="8.0dip"
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:scaleType="fitXY"
+                    android:tint="@color/colorOpposite"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12.0dip" />
+
+                <ImageView
+                    android:background="@drawable/bg_share"
+                    android:padding="8.0dip"
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:onClick="youme"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12.0dip"
+                    android:id="@+id/mainviewImageView1" />
+
+                <ImageView
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:background="@drawable/bg_share"
+                    android:padding="8.0dip"
+                    android:layout_width="44.0dip"
+                    android:layout_height="44.0dip"
+                    android:src="@drawable/help"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12.0dip"
+                    android:id="@+id/btnMenu" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorOpposite"
+                        android:id="@+id/titletxt"
+                        android:paddingBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLY VPN" />
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFDA0A"
+                        android:id="@+id/titletxt2"
+                        android:paddingBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" PRO" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-70dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_roundvip"
+            android:id="@+id/sheetvipopen">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/govip"
+                android:id="@+id/statusvip1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go VIP"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:id="@+id/statusvip1text" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bytes_In"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.5sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/down" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/up" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bytes_Out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffffffff"
+                        android:textSize="12.5sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/ivCurve">
+
+            <RelativeLayout
+                app:rb_radius="32.0dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="250dip"
+                android:layout_height="250dip">
+
+                <com.flyvpnpro.main.view.Ripple
+                    android:id="@+id/content"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent="true"
+                    app:rb_color="#ff00c5d6"
+                    app:rb_radius="32.0dip"
+                    app:rb_duration="3000"
+                    app:rb_rippleAmount="7"
+                    app:rb_scale="3.8" />
+
+                <RelativeLayout
+                    android:id="@+id/relConnect"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_centerInParent="true"
+                    style="@style/CircleBorderBg">
+
+                    <ImageView
+                        android:id="@+id/activity_starterButtonMain"
+                        android:paddingBottom="10dp"
+                        android:layout_width="140dp"
+                        android:scaleType="fitCenter"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:paddingStart="10dp"
+                        android:scaleY="1.0"
+                        android:tint="@color/al"
+                        android:background="@drawable/icons" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/connection_status"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Tap To Connect" />
+
+            </LinearLayout>
+
+            <Chronometer
+                android:textSize="15.0sp"
+                android:textColor="@color/colorOpposite"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/cmTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="00h:00m:00s" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60.0dip"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/SpinnerBg">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:id="@+id/serverListLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="10dp"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/imageIconSpinner"
+                            android:layout_width="40.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_marginLeft="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip">
+
+                            <TextView
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textSize="14.0sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorOpposite"
+                                android:id="@+id/imageNameSpinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:alpha="1.0" />
+
+                            <TextView
+                                android:textAppearance="?android:textAppearanceSmall"
+                                android:textSize="10.0sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:id="@+id/infoServer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:alpha="1.0"
+                                android:textColor="@color/public_use"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    
+                    <ImageView
+                        android:src="@drawable/free"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="25dp"
+                        android:visibility="gone"
+                        android:id="@+id/free" />
+                    
+                    <ImageView
+                        android:src="@drawable/vip"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="25dp"
+                        android:visibility="gone"
+                        android:id="@+id/vip" />
+
+                    <ImageView
+                        android:id="@+id/server_edit"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:padding="15dp"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_custom_edit"
+                        android:alpha="0.8"
+                        app:tint="@color/colorOpposite" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_botontransparentderecha">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vip2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/statusvip2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="vip"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="#FF2CFF00"
+                    android:id="@+id/statusvip2text" />
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text=": Mode"
+                    android:gravity="left|center"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

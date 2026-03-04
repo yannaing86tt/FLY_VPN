@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginBottom="10dp">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:id="@+id/layoutuserpass">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Enter Your VIP Account"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#FFDA0A"
+            android:shadowColor="#FF000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" 
+			android:textStyle="bold"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="7dp"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			android:layout_marginBottom="7dp"
+			android:orientation="horizontal"
+			android:background="@drawable/bg_botontransparenttrhee">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:textColor="@color/black"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:counterEnabled="true"
+				app:counterMaxLength="10"
+				app:counterOverflowTextAppearance="@style/CounterOverFlow"
+				app:counterTextAppearance="@style/CounterText"
+				app:hintTextAppearance="@style/HintText"
+				app:passwordToggleEnabled="true"
+				app:passwordToggleTint="@color/black"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:textColor="@color/black"
+					android:id="@+id/username"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="VIP Username"
+					app:hintTextAppearance="@style/HintText"
+					android:inputType="textPersonName"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+            
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			android:layout_marginBottom="7dp"
+			android:orientation="horizontal"
+			android:background="@drawable/bg_botontransparenttrhee">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:textColor="@color/black"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:counterEnabled="true"
+				app:counterMaxLength="10"
+				app:counterOverflowTextAppearance="@style/CounterOverFlow"
+				app:counterTextAppearance="@style/CounterText"
+				app:hintTextAppearance="@style/HintText"
+				app:passwordToggleEnabled="true"
+				app:passwordToggleTint="@color/black"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:textColor="@color/black"
+					android:id="@+id/password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="VIP Password"
+					app:hintTextAppearance="@style/HintText"
+					android:inputType="textPassword"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/layouttoken"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Copy Your HWID"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#FFDA0A"
+			android:textStyle="bold"
+            android:shadowColor="#FF000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" 
+			android:layout_margin="10dp"/>
+
+		<ImageView
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_gravity="center"
+			android:id="@+id/pngtoken"
+			android:background="@drawable/hwidcopy"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" >
+	
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33"/>
+    
+	<!--- Permissions -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POWER_SERVICE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+	<!--- Application -->	
+    <application
+        android:name="com.flyvpnpro.main.MainApp"
+		android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/icons"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:windowSoftInputMode="adjustPan"
+        android:resizeableActivity="true"
+		android:requestLegacyExternalStorage="true" >
+        
+		<!--- Activities -->
+        <activity 
+            android:name="com.flyvpnpro.main.LauncherActivity"
+            android:theme="@style/SplashScreenTheme" 
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            
+            </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name="com.flyvpnpro.main.MainActivity"
+			android:label="@string/app_name" />
+
+        <activity
+            android:name="com.flyvpnpro.main.Errors" 
+            android:label="Application Error" />
+    
+        <activity
+            android:label="Fly Speed Test"
+            android:name="com.flyvpnpro.main.SpeedTest" />
+       
+         <activity 
+            android:name="com.flyvpnpro.main.activities.ConfigGeralActivity"
+            android:parentActivityName="com.flyvpnpro.main.MainActivity"
+            android:label="@string/settings"
+            android:exported="true" />
+        
+         <receiver 
+            android:name="com.flyvpnpro.second.MainReceiver"
+            android:exported="true">
+            
+            <intent-filter>
+                
+             <action android:name="com.flyvpnpro.second.MainReceiver.ACTION_SERVICE_STOP">
+           
+             </action>
+                
+             <action android:name="com.flyvpnpro.second.MainReceiver.ACTION_SERVICE_RESTART">
+            
+             </action>
+                
+         </intent-filter>
+            
+     </receiver>
+        
+        <service 
+            android:label="@string/app_name"
+            android:name="com.flyvpnpro.second.tunnel.vpn.TunnelVpnService"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            
+            <intent-filter>
+            
+            <action 
+                android:name="android.net.VpnService"/>
+                
+            </intent-filter>
+            
+        </service>
+        
+         <service 
+            android:label="@string/app_name"
+            android:name="com.flyvpnpro.second.MainService"
+            android:exported="false"
+            android:stopWithTask="false" >
+         </service>   
+        
+         <activity
+            android:name="com.flyvpnpro.main.LicenseActivity"
+            android:parentActivityName="com.flyvpnpro.main.activities.AboutActivity"
+            android:label="License"
+            android:exported="true" />
+        
+         <activity 
+            android:name="com.flyvpnpro.main.activities.AboutActivity"
+            android:parentActivityName="com.flyvpnpro.main.MainActivity"
+            android:label="@string/about"
+            android:exported="true" />
+        
+         <activity
+            android:name="com.flyvpnpro.main.activities.VIPActivity"
+            android:parentActivityName="com.flyvpnpro.main.MainActivity"
+            android:theme="@style/AppThemeActivitys"
+            android:label="VIP LOGIN MODE" 
+            android:exported="true" />
+        
+         <activity 
+            android:label="Subscriptions"
+            android:name="com.flyvpnpro.main.activities.Premium"
+            android:parentActivityName="com.flyvpnpro.main.MainActivity"
+            android:exported="true"/>
+        
+         <service 
+            android:name="com.flyvpnpro.main.activities.InjectorService"
+            android:exported="false"/>
+        
+        <activity 
+            android:exported="true"
+            android:name="com.flyvpnpro.second.LaunchVpn"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.flyvpnpro.second.LaunchVPN"
+            android:theme="@style/AppThemeLogin" 
+            android:label="@string/app_name">
+            <intent-filter>
+
+                <action 
+                    android:name="android.intent.action.MAIN" />
+
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+            
+        </activity>
+  
+		<!--- Meta Data -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1191820402141069~4254402795"/>
+        
+        <meta-data 
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+			android:value="true" />
+		
+		<!-- corrige bug em Android 9 -->
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+		
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+		
+    </application>
+	
+</manifest>

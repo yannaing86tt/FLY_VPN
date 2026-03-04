@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:background="?colorPrimary">
+
+		<ImageView
+			android:src="@drawable/error"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_margin="20dp"
+            android:hint="@color/colorOpposite"
+			android:adjustViewBounds="true"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="PROHIBITED APPLICATIONS"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="bold"
+		android:layout_marginTop="10dp"
+		android:id="@+id/blckTextView1"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Note: Uninstall prohibited application in order to use this VPN app"
+		android:gravity="center"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/blckTextView2"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="left|center"
+		android:layout_margin="10dp">
+
+		<ImageView
+			android:src="@drawable/icons"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:adjustViewBounds="true"
+			android:layout_margin="10dp"
+			android:id="@+id/iv"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/tv1"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/tv2"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<Button
+			android:textColor="@color/colorOpposite"
+			android:id="@+id/cancel"
+			android:background="?attr/colorPrimary"
+			android:layout_width="170dp"
+			android:layout_height="wrap_content"
+			android:text="Enter Unlock Key"
+			android:layout_alignParentRight="true"
+			android:gravity="center"/>
+
+		<Button
+			android:textColor="@color/colorOpposite"
+			android:id="@+id/Uninstall"
+			android:background="?attr/colorPrimary"
+			android:layout_width="170dp"
+			android:layout_height="wrap_content"
+			android:text="Uninstall"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

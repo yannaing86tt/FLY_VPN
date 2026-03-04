@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <style name="ja" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="SpinnerBg">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+    <style name="txt">
+        <item name="android:textColor">#ffffff</item>
+         </style>
+	<style name="AppTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="preferenceTheme">@style/AppPreference</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+         <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog</item>
+        <item name="buttonTint">@color/colorText</item>
+     <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme.Light" parent="@style/Theme.Design.Light.BottomSheetDialog">
+             <item name="bottomSheetStyle">@style/AppModalStyle.Light</item>
+    </style>
+    <style name="AppModalStyle.Light">
+        <item name="android:background">@drawable/cbg_light</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="behavior_peekHeight">620dp</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme" parent="@style/Theme.Design.Light.BottomSheetDialog">
+             <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="AppModalStyle">
+        <item name="android:background">@drawable/cbg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="behavior_peekHeight">620dp</item>
+    </style>
+    <style name="UpTheme" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/UpThemeAnims</item>
+    </style>
+
+    <style name="DownTheme" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/DownThemeAnims</item>
+    </style>
+
+    <style name="UpThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/up_enter</item>
+        <item name="android:windowExitAnimation">@anim/up_exit</item>
+    </style>
+
+    <style name="DownThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/down_enter</item>
+        <item name="android:windowExitAnimation">@anim/down_exit</item>
+    </style>
+    <style name="MainBg">
+        <item name="android:background">@drawable/back_dark_gradient</item>
+    </style>
+    <style name="CircleBorderBg">
+        <item name="android:background">@drawable/bg_circle_border</item>
+    </style>
+    <style name="CircleBg">
+        <item name="android:background">@drawable/disconnect</item>
+    </style>  
+    <style name="AppAlertDialog" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:background">@color/colorSecondaryBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonTint">@color/colorText</item>
+            
+        </style>
+    <style name="AppPreference" parent="@style/PreferenceThemeOverlay"><item name="android:textSize">12.0sp</item></style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"><item name="android:textColorPrimary">@color/white</item><item name="actionMenuTextColor">@android:color/holo_green_light</item><item name="colorAccent">@color/gray</item><item name="colorControlNormal">@color/white</item><item name="colorControlActivated">@color/blue</item><item name="colorControlHighlight">@color/gray_light</item></style>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="Toolbar.TitleText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"><item name="android:textSize">21.0sp</item><item name="android:textColor">@color/white</item><item name="android:fontFamily">@font/font</item></style>
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name ="android:windowBackground">@drawable/splash</item>
+        <item name="android:navigationBarColor">@color/colorSecondaryBackground</item>
+    </style>
+</resources>

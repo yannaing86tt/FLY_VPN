@@ -1,0 +1,135 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+   
+   	<androidx.preference.PreferenceCategory >
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="Data Compression"
+            android:key="data_compression"
+            android:summary="Compresses and speed up data transfer for files/data that can be compressed. NOT recommended for low memory device"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="wakelock"
+            android:summary="Activate only if the application is stopping working on its own, as happens when locking the screen on some devices."
+            android:title="CPU Wakelock"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+            
+   	</androidx.preference.PreferenceCategory>
+    
+	
+	   <androidx.preference.PreferenceCategory >
+	
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="dnsForward"
+            android:summary="@string/summary_forward_dns"
+            android:title="@string/title_forward_dns"
+            android:defaultValue="true"
+		    app:iconSpaceReserved="false" />
+        
+        <com.flyvpnpro.main.view.SummaryEditTextPreference
+            android:key="dnsResolver1"
+            android:title="@string/title_dns_primary"
+            android:summary="@string/summary_dns_primary"
+            android:dialogMessage="@string/dialog_message_dns_primary"
+            android:singleLine="true"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix"
+            app:iconSpaceReserved="false" />
+        
+        <com.flyvpnpro.main.view.SummaryEditTextPreference
+            android:key="dnsResolver2"
+            android:title="Secondary DNS"
+            android:summary="8.8.4.4"
+            android:dialogMessage="Enter the Secondary DNS"
+            android:singleLine="true"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix" 
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="udpForward"
+            android:defaultValue="true"
+            android:summary="@string/summary_forward_udp"
+            android:title="@string/title_forward_udp" 
+            app:iconSpaceReserved="false" />
+
+        <com.flyvpnpro.main.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:defaultValue="127.0.0.1:7300"
+            android:dialogMessage=""
+            android:singleLine="true" 
+            app:iconSpaceReserved="false" />
+        
+       </androidx.preference.PreferenceCategory>
+        
+    
+       <androidx.preference.PreferenceCategory>
+		
+        <com.flyvpnpro.main.view.SummaryEditTextPreference
+            android:key="pingerSSH"
+            android:title="@string/title_ping_time"
+            android:maxLength="3"
+            android:summary="@string/no_value"
+            android:singleLine="true" 
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.Preference
+            android:key="buffer_size"
+            android:title="BufferSize" 
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="auto_ping"
+            android:summary="Pinger with url for keep-alive connection, used for stabilizing and prevent your connection from sleep."
+            android:title="Auto Ping"
+            android:defaultValue="false" 
+            app:iconSpaceReserved="false" />
+
+        <com.flyvpnpro.main.view.SummaryEditTextPreference
+            android:dependency="auto_ping"
+            android:key="ping_server"
+            android:title="Ping Server"
+            android:summary="Set ping server"
+            android:defaultValue="clients3.google.com"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix" 
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="autoClearLogs"
+            android:defaultValue="true"
+            android:summary="@string/summary_auto_clear_log"
+            android:title="@string/title_auto_clear_log" 
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="hideLog"
+            android:defaultValue="false"
+            android:summary="@string/summary_hide_log"
+            android:title="@string/title_hide_log" 
+            app:iconSpaceReserved="false" />
+        
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="vibrate"
+            android:title="Vibrate"
+            app:iconSpaceReserved="false"
+            android:summary="Vibrate when connection status changes"
+        />
+
+	</androidx.preference.PreferenceCategory>
+    
+       <androidx.preference.PreferenceCategory>
+    
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="screenAdvancedSettings"
+            app:fragment="com.flyvpnpro.main.preference.SettingsAdvancedPreference"
+            android:title="@string/category_advanced_settings"/>
+   
+      </androidx.preference.PreferenceCategory>
+    
+</androidx.preference.PreferenceScreen>
