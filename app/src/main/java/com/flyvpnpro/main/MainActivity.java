@@ -1850,7 +1850,7 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
                             // Manual update check: always allow user to apply latest config
                             // (avoids strict version-compare mismatch cases).
                             if (!isOnCreate) {
-                                newUpdateDialog(result);
+                                applyUpdateNow(result);
                                 return;
                             }
 
@@ -1986,6 +1986,24 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
     }
     
     @SuppressLint("SetTextI18n")
+    private void applyUpdateNow(String result) {
+        try {
+            File file = new File(getFilesDir(), "flyvpnpro.json");
+            OutputStream out = new FileOutputStream(file);
+            out.write(result.getBytes());
+            out.flush();
+            out.close();
+            welcomeNotif();
+            Toast.makeText(getApplicationContext(), "Config applied. Restarting...", Toast.LENGTH_SHORT).show();
+            startActivity(getIntent());
+            finish();
+            overridePendingTransition(0, 0);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Apply failed", Toast.LENGTH_LONG).show();
+        }
+    }
+
     private void noUpdateDialog() {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View inflate = inflater.inflate(R.layout.help, (ViewGroup) null);
