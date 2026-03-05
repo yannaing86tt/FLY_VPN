@@ -1846,12 +1846,17 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
                     try {
                         if (!result.contains("Error on getting data")) {
                             String json_data = decodeOrPlain(result);
+
+                            // Manual update check: always allow user to apply latest config
+                            // (avoids strict version-compare mismatch cases).
+                            if (!isOnCreate) {
+                                newUpdateDialog(result);
+                                return;
+                            }
+
+                            // Auto check on app start keeps old version-compare behavior.
                             if (isNewVersion(json_data)) {
                                 newUpdateDialog(result);
-                            } else {
-                                if (!isOnCreate) {
-                                    noUpdateDialog();
-                                }
                             }
                         } else if(result.contains("Error on getting data") && !isOnCreate){
                             errorUpdateDialog(result);
