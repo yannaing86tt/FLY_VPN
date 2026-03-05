@@ -138,14 +138,15 @@ public class ConfigUtil {
 
   public JSONArray getServersArray() {
     try {
-      if (getJSONConfig() != null) {
-        JSONArray array = getJSONConfig().getJSONArray("Servers");
-        return array;
+      JSONObject cfg = getJSONConfig();
+      if (cfg != null) {
+        if (cfg.has("Servers")) return cfg.getJSONArray("Servers");
+        if (cfg.has("FLYServers")) return cfg.getJSONArray("FLYServers");
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return null;
+    return new JSONArray();
   }
 
   public ArrayList getNetworkSSLArray(ArrayList arraylist) {
@@ -182,14 +183,14 @@ public class ConfigUtil {
 
   public JSONArray getNetworksArray() {
     try {
-      if (getJSONConfig() != null) {
-        JSONArray array = getJSONConfig().getJSONArray("Networks");
-        return array;
+      JSONObject cfg = getJSONConfig();
+      if (cfg != null && cfg.has("Networks")) {
+        return cfg.getJSONArray("Networks");
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return null;
+    return new JSONArray();
   }
 
   public boolean versionCompare(String NewVersion, String OldVersion) {

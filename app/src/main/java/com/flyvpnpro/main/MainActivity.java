@@ -1114,12 +1114,13 @@ CompoundButton.OnCheckedChangeListener, SkStatus.StateListener, View.OnLongClick
             map1.put("FLAG", "auto");
             map1.put("INFO", "Custom");
             serversList.add(map1);
-            for (int i = 0; i < configs.getServersArray().length(); i++) {
-            JSONObject jSONObject = configs.getServersArray().getJSONObject(i);
+            JSONArray arr = configs.getServersArray();
+            for (int i = 0; i < arr.length(); i++) {
+            JSONObject jSONObject = arr.getJSONObject(i);
             HashMap<String, String> hashMap2 = new HashMap<String, String>();
-            hashMap2.put("COUNTRY", jSONObject.getString("FLYName"));
-            hashMap2.put("FLAG", jSONObject.getString("FLYFLAG"));
-            hashMap2.put("INFO", jSONObject.getString("FLYInfo"));
+            hashMap2.put("COUNTRY", jSONObject.optString("FLYName", jSONObject.optString("Name", "Server")));
+            hashMap2.put("FLAG", jSONObject.optString("FLYFLAG", jSONObject.optString("Flag", "auto")));
+            hashMap2.put("INFO", jSONObject.optString("FLYInfo", jSONObject.optString("ServerInfo", "")));
             serversList.add(hashMap2);
             }
         } catch (JSONException e) {
